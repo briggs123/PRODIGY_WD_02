@@ -48,7 +48,7 @@ function lap() {
     const lapTime = new Date().getTime() - startTime;
     const formattedLapTime = formatTime(lapTime);
     const lapElement = document.createElement("div");
-    lapElement.textContent = Lap ${++lapCounter}: ${formattedLapTime};
+    lapElement.textContent = `Lap ${++lapCounter}: ${formattedLapTime}`;
     laps.appendChild(lapElement);
   }
 }
